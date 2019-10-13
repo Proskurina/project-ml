@@ -1,0 +1,16 @@
+yana ~/Documents/project-ml-microservice-kubernetes 15:18 $ ./run_kubernetes.sh
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/prediction-app created
+NAME                             READY   STATUS              RESTARTS   AGE
+prediction-app-c5f449b86-dfngc   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+yana ~/Documents/project-ml-microservice-kubernetes 15:18 $ ./run_kubernetes.sh
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+Error from server (AlreadyExists): deployments.apps "prediction-app" already exists
+NAME                             READY   STATUS    RESTARTS   AGE
+prediction-app-c5f449b86-dfngc   1/1     Running   0          10s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
